@@ -1,0 +1,24 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-9.1.1, pluggy-1.6.0 -- /usr/bin/python3
+cachedir: .pytest_cache
+rootdir: /home/claude/SoftwaretechnikBH-TestingTDD
+collecting ... collected 16 items
+
+teil1_unittests/tests/test_shopping_list.py::test_add_single_item_increases_total PASSED [  6%]
+teil1_unittests/tests/test_shopping_list.py::test_add_same_item_twice_merges_quantity PASSED [ 12%]
+teil1_unittests/tests/test_shopping_list.py::test_total_cost_sums_multiple_items PASSED [ 18%]
+teil1_unittests/tests/test_shopping_list.py::test_average_item_price_computes_weighted_average PASSED [ 25%]
+teil1_unittests/tests/test_shopping_list.py::test_add_item_with_negative_price_raises_value_error PASSED [ 31%]
+teil1_unittests/tests/test_shopping_list.py::test_add_item_with_zero_quantity_raises_value_error PASSED [ 37%]
+teil1_unittests/tests/test_shopping_list.py::test_average_item_price_on_empty_list_raises_custom_exception PASSED [ 43%]
+teil2_shoppingcart/tests/test_cart.py::test_add_item_increases_item_count PASSED [ 50%]
+teil2_shoppingcart/tests/test_cart.py::test_add_same_item_twice_merges_quantity PASSED [ 56%]
+teil2_shoppingcart/tests/test_cart.py::test_remove_item_decreases_item_count PASSED [ 62%]
+teil2_shoppingcart/tests/test_cart.py::test_get_total_sums_price_times_quantity PASSED [ 68%]
+teil2_shoppingcart/tests/test_cart.py::test_remove_nonexistent_item_raises_item_not_found_error PASSED [ 75%]
+teil3_mocking/tests/test_shopping_reminder.py::test_is_shopping_day_true_on_sunday PASSED [ 81%]
+teil3_mocking/tests/test_shopping_reminder.py::test_is_shopping_day_false_on_wednesday PASSED [ 87%]
+teil3_mocking/tests/test_shopping_reminder.py::test_days_until_shopping_day_from_wednesday PASSED [ 93%]
+teil3_mocking/tests/test_shopping_reminder.py::test_days_until_shopping_day_is_zero_on_sunday PASSED [100%]
+
+============================== 16 passed in 0.04s ==============================
