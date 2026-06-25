@@ -12,7 +12,7 @@ def test_is_shopping_day_true_on_sunday():
     reminder = ShoppingReminder()
     with patch.object(shopping_reminder, "date") as mock_date:
         mock_date.today.return_value = date(2026, 6, 21)  # ein Sonntag
-        assert reminder.is_shopping_day() is Trueq
+        assert reminder.is_shopping_day() is True
 
 def test_is_shopping_day_false_on_wednesday():
     reminder = ShoppingReminder()
